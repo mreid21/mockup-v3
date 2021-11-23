@@ -22,37 +22,11 @@ function App() {
   courseGraph.display()
 
   //TODO: fix this to do something right for once
-  const test = () => {
-    const courses = Array.from(courseMap.values())
-    let all = []
-
-    for(let i = 0; i < 5; i++){
-
-      let semester = []
-
-      for(let j = 0; j < 5; j++){
-        courses.forEach(course => {
-          if(!coursesTaken.find(c => c.courseId === course.courseId)){
-            const update = [...coursesTaken, course]
-            setTaken(update)
-            semester.push(course)
-          }
-        })
-      }
-      all.push(semester)
-    }
-
-    return all
-  }
-
-  const semesters = test()
-
-  const mapped = semesters.map((entry) => <Semester key={Math.floor(Math.random())} courses={entry}/>)
 
   return (
     <main className="container">
       <div className="course-container">
-        {mapped}
+        
       </div>
     </main>
   );
