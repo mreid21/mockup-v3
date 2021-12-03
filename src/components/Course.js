@@ -2,8 +2,8 @@
 const Course = ({course}) => {
 
     return(
-        <div class="course-box__course">
-            <p class="course-box__course--code">{course.name}</p>
+        <div className="course-box__course">
+            <p className="course-box__course--code">{course.name}</p>
             <p>{course.credits}</p>
         </div>
     )

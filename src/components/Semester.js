@@ -4,14 +4,18 @@ import Course from './Course';
 
 const Semester = ({courses, term}) => {
 
+    
+
+    const mapped = courses.map((course) => <Course key={course.UUID} course={course}/>)
+
     return(
-        <section class="glass-box course-box">
-            <div class="course-box__content">
-                <header class="course-box__header">
+        <section className="glass-box course-box">
+            <div className="course-box__content">
+                <header className="course-box__header">
                     <p>{term}</p>
                     <p>X</p>
                 </header>
-                {courses.map((course) => <Course course={course}/>)}
+                {mapped}
             </div>
         </section>
     )
