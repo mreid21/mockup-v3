@@ -25,10 +25,7 @@ function App() {
     {UUID: 38293619, courseId: 'COP4620', name: 'Construction of Language Translators', credits: 3, prereqs: ['COP3530', 'COP3210']}
   ]
   //TODO: fix this to do something right for once
-  const [taken, setTaken] = useState([
-    [{UUID: 35223553, courseId: 'COP2220', name: 'Programming I', credits: 3, prereqs: []},
-    {UUID: 19024908, courseId: 'COT3100', name: 'Computational Structures', credits: 4, prereqs: []}]
-  ])
+  const [taken, setTaken] = useState([])
 
   const autoCompleteSemester = () => {
     let sem = []
