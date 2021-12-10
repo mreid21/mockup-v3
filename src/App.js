@@ -4,8 +4,6 @@ import Semester from './components/Semester';
 
 function App() {
 
-  
-
   //setTaken(coursesTaken.set('Spring 2022', ))
   //setTaken(coursesTaken.set('Fall 2022', ))
 
@@ -54,7 +52,7 @@ function App() {
         {mapped}
       </div>
       <div>
-      <button onClick={autoCompleteSemester}>Make</button>
+      <button onClick={autoCompleteSemester}>Autofill Semester</button>
       </div>
     </main>
   );
